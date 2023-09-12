@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: ${컨테이너 명}
+    container_name: httpd
     volumes:
       - /home/ec2-user/silver/:/home/silver
     ports:
