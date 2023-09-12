@@ -1,4 +1,4 @@
-ame: CI-CD prod
+name: CI-CD prod
 
 on:
   push:
