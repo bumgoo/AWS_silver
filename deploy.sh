@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_APP_NAME=${컨테이너 명}
+DOCKER_APP_NAME=httpd
 
 cd /home/ec2-user/silver
 
