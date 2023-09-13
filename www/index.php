@@ -18,11 +18,12 @@ while ($row = pg_fetch_assoc($result)) {
   $res[] = $row;
 }
 
-foreach ($res[0] as $k){
+foreach ($res as $k){
+  var_dump($k);
   echo <<<EOM
 wo!!! : Hello World<br/>
-RDS ID : {$k['id']}
-RDS name : {$k['name']}
+RDS ID : {$k}
+RDS name : {$k}
 EOM;
 }
 
