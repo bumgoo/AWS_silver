@@ -1,5 +1,6 @@
 <?php
 
+
 $db_host = "host=database-silver.c3al6husi4ee.ap-northeast-2.rds.amazonaws.com";
 $db_port = "port=5432";
 $db_user = "user=postgres";
@@ -13,7 +14,7 @@ $result = pg_query($conn, $query);
 
 $res = [];
 
-var_dump($result);
+var_dump($conn);
 
 //$row = pg_fetch_assoc($result);
 //
