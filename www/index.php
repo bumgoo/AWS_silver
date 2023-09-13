@@ -13,9 +13,9 @@ $result = pg_query($conn, $query);
 
 $res = [];
 
-$row = pg_fetch_assoc($result);
-
-var_dump($row);
+//$row = pg_fetch_assoc($result);
+//
+//var_dump($row);
 
 //
 //while () {
