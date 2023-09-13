@@ -12,8 +12,13 @@ $query = "SELECT * FROM rds_table";
 $result = pg_query($conn, $query);
 
 $res = [];
+
+$row = pg_fetch_assoc($result);
+
+var_dump($row);
+
 //
-//while ($row = pg_fetch_assoc($result)) {
+//while () {
 //  $res[] = $row;
 //}
 //
