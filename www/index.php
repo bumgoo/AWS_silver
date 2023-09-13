@@ -12,16 +12,14 @@ $query = "SELECT * FROM rds_table";
 $result = pg_query($conn, $query);
 
 $res = [];
-$res = [];
-
-
-while ($row = pg_fetch_assoc($result)) {
-  $res[] = $row;
-}
-
-echo <<<EOM
-EC2 : Hello World<br/>
-RDS : $res[0]
-EOM;
+//
+//while ($row = pg_fetch_assoc($result)) {
+//  $res[] = $row;
+//}
+//
+//echo <<<EOM
+//EC2 : Hello World<br/>
+//RDS : $res[0]
+//EOM;
 
 ?>
