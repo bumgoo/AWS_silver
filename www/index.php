@@ -8,14 +8,14 @@ $db_name = "dbname=postgres";
 
 $conn = pg_connect("$db_host $db_port $db_user $db_password $db_name");
 
-$query = "SELECT * FROM rds_table";
-$result = pg_query($conn, $query);
-
-$res = [];
-
-while ($row = pg_fetch_assoc($result)) {
-  $res[] = $row;
-}
+//$query = "SELECT * FROM rds_table";
+//$result = pg_query($conn, $query);
+//
+//$res = [];
+//
+//while ($row = pg_fetch_assoc($result)) {
+//  $res[] = $row;
+//}
 
 echo <<<EOM
 EC2 : Hello World<br/>
