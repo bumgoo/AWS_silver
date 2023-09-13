@@ -6,22 +6,18 @@ $db_user = "user=postgres";
 $db_password = "password=silver1234";
 $db_name = "dbname=postgres";
 
-//$conn = pg_connect("$db_host $db_port $db_user $db_password $db_name");
+$conn = pg_connect("$db_host $db_port $db_user $db_password $db_name");
 
-//$query = "SELECT * FROM rds_table";
-//$result = pg_query($conn, $query);
-//
+$query = "SELECT * FROM rds_table";
+$result = pg_query($conn, $query);
+
 $res = [];
 $res = [];
-var_dump($db_host);
-var_dump($db_port);
-var_dump($db_user);
-var_dump($db_password);
-var_dump($db_name);
 
-//while ($row = pg_fetch_assoc($result)) {
-//  $res[] = $row;
-//}
+
+while ($row = pg_fetch_assoc($result)) {
+  $res[] = $row;
+}
 
 echo <<<EOM
 EC2 : Hello World<br/>
